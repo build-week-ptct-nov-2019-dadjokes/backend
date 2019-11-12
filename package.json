@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/build-week-ptct-nov-2019-dadjokes/backend.git"
+  },
+  "keywords": [],
+  "author": "Donald Whitely <dswhitely1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/build-week-ptct-nov-2019-dadjokes/backend/issues"
+  },
+  "homepage": "https://github.com/build-week-ptct-nov-2019-dadjokes/backend#readme"
+}
