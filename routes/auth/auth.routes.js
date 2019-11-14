@@ -5,7 +5,7 @@ const generateToken = require('../../utils/token');
 const validate = require('./validation');
 
 async function register(req, res) {
-  const {errors, isValid} = validate.validateRegisterInputs(req.body);
+  const { errors, isValid } = validate.validateRegisterInputs(req.body);
   if (!isValid) {
     return res.status(400).json(errors);
   }
@@ -35,7 +35,7 @@ async function register(req, res) {
 }
 
 async function login(req, res) {
-  const {errors, isValid} = validate.validateLoginInputs(req.body);
+  const { errors, isValid } = validate.validateLoginInputs(req.body);
   if (!isValid) {
     return res.status(400).json(errors);
   }
