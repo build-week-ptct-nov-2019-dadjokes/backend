@@ -11,7 +11,7 @@ exports.up = function(knex) {
       .inTable('users')
       .onDelete('CASCADE')
       .onUpdate('CASCADE');
-    tbl.boolean('private').defaultTo(false);
+    tbl.boolean('privateJoke').defaultTo(false);
     tbl.timestamps(true, true);
   });
 };
