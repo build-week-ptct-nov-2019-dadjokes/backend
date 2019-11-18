@@ -105,5 +105,4 @@ dist
 
 # Webstorm
 .idea
-/apidoc.json
-/apidocs/
+
