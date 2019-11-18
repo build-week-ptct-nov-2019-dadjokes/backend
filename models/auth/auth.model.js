@@ -1,7 +1,13 @@
 const db = require('../../data/dbConfig');
 
 function findUsers() {
-  return db('users');
+  return db('users').returning([
+    'id',
+    'email',
+    'username',
+    'created_at',
+    'updated_at',
+  ]);
 }
 
 function findUserBy(filter) {
@@ -11,14 +17,14 @@ function findUserBy(filter) {
 function addUser(newUser) {
   return db('users')
     .insert(newUser)
-    .returning('*');
+    .returning(['id', 'email', 'username', 'created_at', 'updated_at']);
 }
 
 function updateUser(id, updatedUser) {
   return db('users')
     .where({ id })
     .update(updatedUser)
-    .returning('*');
+    .returning(['id', 'email', 'username', 'created_at', 'updated_at']);
 }
 
 function removeUser(id) {
