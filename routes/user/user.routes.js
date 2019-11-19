@@ -5,7 +5,7 @@ const restricted = require('../../utils/authenticate');
 async function updateUser(req, res) {
   try {
     const response = await Users.updateUser(req.user.id, req.body);
-    res.json(response);
+    res.json(response[0]);
   } catch (err) {
     res.status(500).json();
   }

@@ -106,6 +106,6 @@ dist
 # Webstorm
 .idea
 apidoc.json
-docs/
-apidocs/
+./docs/
+./apidocs/
 

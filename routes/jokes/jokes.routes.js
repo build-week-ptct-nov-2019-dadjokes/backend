@@ -16,7 +16,6 @@ async function allJokes(req, res) {
     const response = await Jokes.findJokes();
     res.json(response);
   } catch (err) {
-    console.log(err);
     res.status(500).json(err);
   }
 }
